@@ -1,6 +1,10 @@
 body{
-    display:grid
+    display:grid;
+    background-color: black;
 } 
 nav{
-    display:flex
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
