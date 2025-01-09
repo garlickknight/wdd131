@@ -1,10 +1,19 @@
 body{
+    background-color: rgb(156, 153, 153);
     display:grid;
-    background-color: black;
+    
+
 } 
 nav{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border: 10px black;
+}
+footer{
+    background-color: white;
 }
