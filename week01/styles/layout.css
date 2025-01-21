@@ -1,19 +1,44 @@
 body{
-    background-color: rgb(156, 153, 153);
     display:grid;
-    
+    grid-template-rows: 1fr 1fr 1fr;
 
 } 
+
+header{
+    grid-column: 0 / 5;
+    color: white;
+    background-color: grey;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.main {
+    grid-column: 1 / 2;
+
+}
+.side {
+    grid-column: 3;
+    background-color:white;
+}
+/* .main content{
+    grid-column: 0 / 3;
+}
+.aside content{
+    grid-column: 4 / 5;
+} */
+
 nav{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    background-color: black;
     border-style: solid;
     border-color: black;
     border: 10px black;
 }
 footer{
-    background-color: white;
+    background-color: grey;
 }
