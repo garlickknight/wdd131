@@ -30,7 +30,7 @@ nav {
     align-items: center;
 }
 nav h1 {
-    border: 5px;
+    border: solid 5px;
     border-color: black;
     padding: 5px;
     background-color: white;
