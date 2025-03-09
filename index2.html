@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Joseph Garlick </title>
+    <meta author="Joseph Garlick">
+    <meta rel= "Description" content = "This is Joseph Garlick's home page for his WDD 131- Dynamic Web Fundamentals">
+    <scripts src = "scripts/getdates.js" defer></scripts>
+    <link rel= "stylesheet" href = "styles/base2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script href="scripts\getdates.js" defer></script>
+</head>
+<body>
+    <header class = "heading">
+        <h1>Page heading</h1>
+        <nav>
+            <h1><a href="https://www.linkedin.com/in/joe-garlick-08a2b1290">linkedin</a></h1>
+            <h1><a href = "https://byupw.instructure.com/">Canvas</a></h1>
+            <h1><a href ="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a></h1>
+            <h1><a href = "">final Project</a></h1>
+        </nav>
+    </header>
+    <main>
+        <section class = "card">
+            <h2>About me</h2>
+            <img src = "" alt = "Profile Pic">
+            <p>this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me,
+            this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me,
+            this is a paragraph about me, this is a paragraph about me</p>
+            
+        </section>
+        <section class = "card">
+            <h2>Detroit, Michigan</h2>
+            <img src ="" alt = "Detroit Michigan">
+            <p>This is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me, this is a paragraph about me</p>
+        </section>
+    </main>
+    <footer>
+        <p><span id ="currentyear"></span> Joseph Garlick, Utah</p>
+        <p id ="lastmodified"></p>
+    </footer>
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById("currentyear").innerHTML = year;
+    </script>
+</body>
+</html>

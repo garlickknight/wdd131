@@ -1,0 +1,33 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+body {
+    --font-family:var(--font-family);
+    background-color: rgb(170, 170, 170);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.heading{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(225, 82, 82);
+}
+.heading h1 {
+    display: flex;
+    justify-content: center;
+}
+main {
+    /* display:grid;
+    place-items: center; */
+    max-width:60%;
+    text-align:center;
+    border-color: rgb(0, 0, 0);
+    border: 10px black;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
