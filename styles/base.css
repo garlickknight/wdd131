@@ -20,7 +20,7 @@ nav {
     border-bottom: solid 5px black;
     background-color: rgb(106, 106, 211);
 }
-nav h1 {
+nav h1:hover {
     border: solid 5px;
     border-color: black;
     padding: 5px;
