@@ -1,16 +1,8 @@
 /* // <uniquifier>: Use a unique and descriptive class name */
 
-
-:root{
-
-    --robotto {
-        font-family: "Roboto", serif;
-    }
-}
-
 body {
     background-color: rgb(211, 206, 206);
-    font-family: var(--roboto);
+    font-family: "Roboto", serif;
     display:grid;
 
 }
