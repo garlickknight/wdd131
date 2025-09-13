@@ -12,11 +12,34 @@
             background-color: rgb(254, 39, 39)
         }
     
-        body nav {
+        /* body nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             background-color: rgb(30, 150, 0);
+        } */
+        #menu {
+            font-size: 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: .5rem .75rem;
+            background-color: blue;
+            color: black;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        
+        #menu::before
+        {
+            content: "=";
+        }
+        #menu.open::before{
+            content:"x"
+        }
+        .navigation::before {
+            display:none;
+
         }
     
         #home {
@@ -42,6 +65,20 @@
         p {
                 text-align: center;
         }
+        nav h2:hover {
+            border: solid 5px;
+            border-color: black;
+            padding: 5px;
+            background-color: white;
+        }
+        
+        nav a:hover {
+            background-color: white;
+        }
+        menu button:hover {
+            background-color: aliceblue;
+        }
+        
 }
 
 /* 
@@ -147,4 +184,12 @@ footer {
     font-size: x-large;
     text-align:center;
 } */
+ /* .off-screen-menu {
+     background-color: green;
+     height: 100vh;
+     width: 100%;
+     max-width: 75vw;
+     position: fixed;
+     top: 0;
+ } */
 

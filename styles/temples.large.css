@@ -11,13 +11,13 @@
         body header {
             background-color: rgb(254, 39, 39)
         }
-    
+        
         body nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             background-color: rgb(30, 150, 0);
-        }
+        }  
         nav h2:hover{
             border: solid 5px;
             border-color: black;
@@ -49,4 +49,17 @@
         p{
             text-align: center;
         }
+        .button {
+            visibility: hidden;
+        }
 }
+
+/* .off-screen-menu {
+    background-color: green;
+    width: 100%;
+    max-width: 75vw;
+    position: fixed;
+    top: 0;
+
+
+} */
