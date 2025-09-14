@@ -19,6 +19,7 @@
             background-color: rgb(30, 150, 0);
         } */
         #menu {
+            display:  block;
             font-size: 2rem;
             font-weight: 700;
             text-decoration: none;
@@ -29,7 +30,9 @@
             top: 0;
             right: 0;
         }
-        
+        .show li{
+            display: block;
+        }
         #menu::before
         {
             content: "=";
@@ -37,9 +40,27 @@
         #menu.open::before{
             content:"x"
         }
-        .navigation::before {
+        .navigation {
             display:none;
-
+            /* content to test*/
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        .navigation a:hover {
+            background-color: white;
+        }
+        .open.navigation{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style: none;
+            background-color: #333;
+            color: #fff;
+        }
+        .open a{
+            display:block;
         }
     
         #home {
@@ -78,7 +99,7 @@
         menu button:hover {
             background-color: aliceblue;
         }
-        
+
 }
 
 /* 
