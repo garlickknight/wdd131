@@ -1,7 +1,16 @@
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
-.hero {
+picture {
     position:absolute;
+    
 }
+.data {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.497);
+    font-size: larger;
+    color:black;
+}
+
