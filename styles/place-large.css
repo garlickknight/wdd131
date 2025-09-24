@@ -1,7 +1,41 @@
+:root{
+    background-color: rgba(128, 128, 128, 0.504);
+}
+
+main {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    position: sticky;
+
+}
+
+.data {
+    background-color: rgba(255, 255, 255, 0.497);
+    font-size: larger;
+    color: black;
+}
+
+/* .weather {
+    position: absolute;
+} */
+/* 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "left right"
+    ;
+    position:relative;
+    height: 1500px;
 }
 picture {
     position:absolute;
@@ -13,4 +47,8 @@ picture {
     font-size: larger;
     color:black;
 }
-
+.weather {
+    position:absolute;
+    grid-area:right;
+    justify-self: center;
+} */
