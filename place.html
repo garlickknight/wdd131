@@ -62,7 +62,7 @@
                 </div>
                 <div class="weather">
                     <h2>Weather</h2>
-                    <source srcset="images/sun.svg" meida="(max-width: 400px)">
+                    <source srcset="images/sun.svg" meida="(max-width: 500px)">
                     <img src="images/real-weather.svg" alt="Weather Icon" width="150" height="150">
                     <Section>
                         <div>
@@ -92,6 +92,11 @@
     <footer>
         <p>&copy;<span id="currentyear"></span> Joseph Garlick Utah</p>
         <p><span id="lastModified"></span></p>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("currentyear").innerHTML = year;
+        </script>
     </footer>
     
 </body>
