@@ -10,31 +10,30 @@
     
         .main {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            /* position: relative;
-            z-index: 0; */
+            flex-direction: column;
+            position: relative;
+            z-index: 0;
         }
     
-        /* #picture {
+        #picture {
             position: relative;
             z-index: 1;
         }
-     */
+    
         .data {
-            /* position: absolute;
+            position: absolute;
             z-index: 3;
-            top: 0px; */
+            top: 0px;
             background-color: rgba(255, 255, 255, 0.862);
             font-size: larger;
             color: black;
         }
     
         .weather {
-            /* position: absolute;
+            position: absolute;
             bottom: 500px;
             right: 300px;
-            z-index: 2; */
+            z-index: 2;
             background-color: rgba(255, 255, 255, 0.862);
             font-size: larger;
             color: black;
