@@ -97,7 +97,10 @@
             var year = date.getFullYear();
             document.getElementById("currentyear").innerHTML = year;
         </script>
+        <script>
+            let oLastModif = new Date(document.lastModified);
+            document.getElementById("lastModified").innerHTML = oLastModif;
+        </script>
     </footer>
-    
 </body>
 </html>

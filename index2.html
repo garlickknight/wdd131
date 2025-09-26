@@ -48,9 +48,8 @@
         document.getElementById("currentyear").innerHTML = year;
     </script>
     <script>
-        var date = new Date();
-        let lastModified = alert(document.lastModified);
-        document.getElementById("lastmodified").innerHTML = lastModified;
+        let oLastModif = new Date(document.lastModified);
+        document.getElementById("lastmodified").innerHTML = oLastModif;
     </script>
 </body>
 </html>
