@@ -3,52 +3,36 @@
 }
 
 main {
-    display: grid;
-        grid-template-columns: 1fr 1fr;
-    position: relative;
+    min-height: fit-content;
+    min-width: fit-content;
 }
-.flexbox{
+
+.main {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    position:relative;
+    z-index: 0;
 }
-
-.picture {
-    position: sticky;
-
+#picture{
+    position: relative;
+    z-index: 1;
 }
 
 .data {
-    background-color: rgba(255, 255, 255, 0.497);
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.862);
     font-size: larger;
     color: black;
 }
 
-/* .weather {
-    position: absolute;
-} */
-/* 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "left right"
-    ;
-    position:relative;
-    height: 1500px;
-}
-picture {
-    position:absolute;
-    
-}
-.data {
-    position:absolute;
-    background-color: rgba(255, 255, 255, 0.497);
-    font-size: larger;
-    color:black;
-}
 .weather {
-    position:absolute;
-    grid-area:right;
-    justify-self: center;
-} */
+    position: absolute;
+    bottom:500px;
+    right: 300px;
+    z-index:2;
+    background-color: rgba(255, 255, 255, 0.862);
+    font-size: larger;
+    color: black;
+}
