@@ -3,11 +3,10 @@
             background-color: rgba(128, 128, 128, 0.504);
         }
     
-        main {
-            min-height: fit-content;
+        /* main {
+            /* min-height: fit-content;
             min-width: fit-content;
-        }
-    
+        /* } */
         .main {
             display: flex;
             flex-direction: column;
