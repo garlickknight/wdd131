@@ -1,4 +1,4 @@
-@media screen and (min-width:500px) {
+@media screen and (min-width:800px) {
 
 :root{
     background-color: rgba(128, 128, 128, 0.504);
@@ -18,10 +18,12 @@ header {
     flex-direction:column;
     position:relative;
     z-index: 0;
+    width: 100%;
+    height: auto;
 }
-#picture{
-    position: relative;
-    z-index: 1;
+.picture img {
+    width: 100%;
+    height: auto;
 }
 
 .data {
@@ -33,14 +35,21 @@ header {
     color: black;
 }
 
-.weather {
+.weathers{
     position: absolute;
-    bottom:500px;
-    right: 300px;
+    bottom: 0px;
+    right: 0px;
     z-index:2;
     background-color: rgba(255, 255, 255, 0.862);
     font-size: larger;
     color: black;
+}
+.weather:nth-child(even){
+    background-color: rgba(56, 56, 56, 0.401);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right:1px solid black;
 }
 footer{
     text-align: center;

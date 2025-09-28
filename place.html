@@ -14,11 +14,13 @@
     </header>
     <main>
             <div class= "main">
-                <picture id = "picture">
-                    <source srcset="images/large-arch(1).webp" meida="min-width: 1500px" sizes="width: 1500px, height: 1500px">
-                    <source srcset="images/medium-arch.webp" meida="min-width: 1000px" sizes="width: 1000px, height: 1000px">
-                    <img src="images/small-arch.webp" alt= "Arch from Arches national park" sizes="width: 500px, height:500px">
-                </picture>
+                <div class = "picture">
+                    <picture>
+                        <source srcset="images/large-arch(1).webp" meida="(min-width: 1000px)" >
+                        <source srcset="images/medium-arch.webp" meida="(min-width: 500px)" >
+                        <img src="images/small-arch.webp" alt= "Arch from Arches national park" width="500" height="500">
+                    </picture>
+                </div>
                 <div>
                     <section class="data">
                         <h2>Data</h2>
@@ -60,30 +62,23 @@
                             </p>
                         </div>
                 </div>
-                <div class="weather">
+                <div class="weathers">
                     <h2>Weather</h2>
-                    <source srcset="images/sun.svg" meida="(min-width: 500px)">
-                    <img src="images/real-weather.svg" alt="Weather Icon" width="150" height="150">
-                    <Section>
+                    <source srcset="images/real-weather.svg" media="min-width: 500px">
+                    <img src="images/sun.svg" alt="Weather Icon" width="150" height="150">
+                    <Section class = "weather">
                         <div>
-                            <p>
-                                <p2>Tempature</p2> : 
-                            </p>
+                            <p><p2>Tempature in fahrenheight</p2> : </p>
                         </div>
                         <div>
-                            <p><p2>Wind Speed</p2> : </p>
+                            <p><p2>Wind Speed (MPH)</p2> :</p>
                         </div>
                         <div class ="wind">
-                            <p>
-                                <p2>Wind Chill</p2> :
-                            </p>
+                            <p><p2>Wind Chill</p2> :</p>
                         </div>
                         <div>
-                            <p>
-                                <p2>Conditions</p2> :
-                            </p>
+                            <p><p2>Conditions</p2> :</p>
                         </div>
-                
                     </Section>
                 </div>
             </div>
@@ -104,9 +99,3 @@
     </footer>
 </body>
 </html>
-
-
-<!-- <source srcset="images/large-arch(1).webp" meida="(max-width: 1500px)">
-<source srcset="images/medium-arch.webp" meida="(max-width: 1000px)">
-<img src="images/small-arch.webp" alt="Arch from Arches national park"> -->
-<!-- width="150" height="150" -->
