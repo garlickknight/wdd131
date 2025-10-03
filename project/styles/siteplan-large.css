@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(46, 46, 46, 0.216);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header {
+    background-color: rgba(24, 24, 148, 0.432);
+    text-align: center;
+    column-span: all;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+
