@@ -96,7 +96,7 @@ const small = []
 const templePull = document.getElementById("pictures");
 // const temple = temples.forEach(temple => console.log(temple.area), console.log(temple.templeName), console.log(temple.location), console.log(temple.dedicated), console.log(temple.imageUrl));
 const temple = temples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
-const split = temples.map(dateSplit => dateSplit.dedicated.split(","));
+const split = temple.map(dateSplit => dateSplit.dedicated.split(","));
  const date = split.forEach(date => {
     if (date.dedicated[0] < 1900) {
         old.push(date);
