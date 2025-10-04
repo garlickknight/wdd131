@@ -1,0 +1,56 @@
+@media screen and (min-width:500px) {
+    body {
+        background-color: rgb(195, 195, 195);
+        font-family: "Roboto", sans-serif;
+    }
+
+    body h1 {
+        text-align: center;
+    }
+
+    body header {
+        background-color: rgb(254, 39, 39)
+    }
+
+    .flex {
+        background-color: #333;
+    }
+
+    nav h2:hover {
+        border: solid 5px;
+        border-color: black;
+        padding: 5px;
+        background-color: white;
+    }
+
+    nav a:hover {
+        background-color: white;
+    }
+
+    #home {
+        flex-basis: 100%;
+        align-content: center;
+    }
+
+    body main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+
+    footer {
+        background-color: rgb(254, 39, 39);
+        font-size: x-large;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .button {
+        visibility: hidden;
+    }
+}
