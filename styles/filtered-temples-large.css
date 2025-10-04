@@ -7,6 +7,9 @@
     body h1 {
         text-align: center;
     }
+    h2 {
+        text-align: center;
+    }
 
     body header {
         background-color: rgb(254, 39, 39)
@@ -46,9 +49,9 @@
         text-align: center;
     }
 
-    p {
+    /* p {
         text-align: center;
-    }
+    } */
 
     .button {
         visibility: hidden;
