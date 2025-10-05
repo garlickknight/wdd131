@@ -87,29 +87,45 @@ const temples = [
     },
 
 ];
-const old = []
-const _new = []
-const large = []
-const small = []
-
-
-const templePull = document.getElementById("pictures");
-// const temple = temples.forEach(temple => console.log(temple.area), console.log(temple.templeName), console.log(temple.location), console.log(temple.dedicated), console.log(temple.imageUrl));
-const temple = temples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
-const split = temple.map(dateSplit => dateSplit.dedicated.split(","));
- const date = split.forEach(date => {
+const old = [];
+const _new = [];
+const large = [];
+const small = [];
+const split = temples.map(dateSplit => dateSplit.dedicated.split(","));
+const test = document.getElementById("test");
+test.innerHTML = split.map(display => `<p>${desplay.dedicated}</p>`)
+const date = split.forEach(date => {
     if (date.dedicated[0] < 1900) {
         old.push(date);
-     }
+    }
     else if (date.dedicated[0] > 2000) {
         _new.push(date);
-     }
+    }
     else if (date.area > 90000) {
         large.push(date);
-     }
+    }
     else if (date.area < 10000) {
         small.push(date);
-        
- }})
 
+    }
+});
+
+const templePull = document.getElementById("pictures");
+const smallPull = document.getElementById("small");
+const largePull = document.getElementById("large");
+const oldPulll = document.getElementById("old");
+const newPull = document.getElementById("new");
+// const temple = temples.forEach(temple => console.log(temple.area), console.log(temple.templeName), console.log(temple.location), console.log(temple.dedicated), console.log(temple.imageUrl));
+const temple = temples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
+const _smallDesplay = small.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
+const _largeDesplay = large.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
+const _oldDesplay = old.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
+const _newDesplay = _new.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = ${temp.imageUrl}></td></tr><table>`);
 templePull.innerHTML = temple.map(desplay => `${desplay}`);
+smallPull.innerHTML = _smallDesplay.map(desplay => `${desplay}`);
+largePull.innerHTML = _largeDesplay.map(desplay => `${desplay}`);
+oldPull.innerHTML = _oldDesplay.map(desplay => `${desplay}`);
+newPull.innerHTML = _newDesplay.map(desplay => `${desplay}`);
+
+
+
