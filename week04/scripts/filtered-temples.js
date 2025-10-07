@@ -117,9 +117,12 @@ function date(split) {
 // I was using the forEach() method instead of the filter method in order to change the temples array into the old array.
 // AI produced the old temples filter function for me which I then adopted to my needs within my code.
 // AI also added the .join('') method to my innerHTML assignments to ensure the arrays were properly formatted as strings for HTML rendering.
-// AI also taught me that you need to use condition statements within your document object modifier to ensure that elements exist before trying to 
+// AI also taught me that you need to use condition statements within your document object modifier to ensure that elements exist before trying to
 // render the content on the page. Without condition statements you will get errors and the content will not render. 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
     const templePull = document.getElementById("pictures");
     const smallPull = document.getElementById("small");
     const largePull = document.getElementById("large");
@@ -128,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Display all temples if the element exists
     if (templePull) {
-        const temple = temples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"></td></tr></table>`);
+        const temple = temples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}" loading = "lazy" width = "400" height = "250"></td></tr></table>`);
         templePull.innerHTML = temple.join("");
     }
 
@@ -138,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const year = parseInt(extractYear(temp.dedicated), 10);
             return year < 1900;
         });
-        const old_list = oldTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"></td></tr></table>`);
+        const old_list = oldTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"  loading = "lazy" width = "400" height = "250"></td></tr></table>`);
         oldPull.innerHTML = old_list.join("");
     }
 
@@ -148,21 +151,21 @@ document.addEventListener("DOMContentLoaded", function() {
             const year = parseInt(extractYear(temp.dedicated), 10);
             return year > 2000;
         });
-        const new_list = newTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"></td></tr></table>`);
+        const new_list = newTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"  loading = "lazy" width = "400" height = "250"></td></tr></table>`);
         newPull.innerHTML = new_list.join("");
     }
 
     // Display large temples if the element exists
     if (largePull) {
         const largeTemples = temples.filter(temp => temp.area > 90000);
-        const large_list = largeTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"></td></tr></table>`);
+        const large_list = largeTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"  loading = "lazy" width = "400" height = "250"></td></tr></table>`);
         largePull.innerHTML = large_list.join("");
     }
 
     // Display small temples if the element exists
     if (smallPull) {
         const smallTemples = temples.filter(temp => temp.area < 10000);
-        const small_list = smallTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"></td></tr></table>`);
+        const small_list = smallTemples.map(temp => `<table><tr><th>${temp.templeName}</th></tr><tr><th>location: ${temp.location}</th></tr><tr><th>Dedicated:${temp.dedicated}</th></tr><tr><th>Square Footage: ${temp.area}</th></tr><tr><td><img src = "${temp.imageUrl}"  loading = "lazy" width = "400" height = "250"></td></tr></table>`);
         smallPull.innerHTML = small_list.join("");
     }
 });
