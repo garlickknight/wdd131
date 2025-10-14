@@ -1,0 +1,107 @@
+@media (min-width: 1001px) {
+body {
+    background-color: rgba(0, 81, 255, 0.132);
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgba(255, 136, 0, 0.352);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 3;
+    border-radius: 1rem;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.flex-item {
+    padding: 10px;
+    margin: 10px;
+}
+
+nav h1:hover {
+    border: solid 5px;
+    border-color: black;
+    padding: 5px;
+    background-color: white;
+}
+
+nav a {
+    color: rgb(48, 0, 0);
+}
+#background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#about-PT {
+    position: sticky;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#content {
+    position: relative;
+    z-index: 2;
+}
+#Common {
+    position: sticky;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#contact {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+footer {
+    background-color: rgba(255, 136, 0, 0.352);
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 4;
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-family: 'Roboto', Arial, sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+}

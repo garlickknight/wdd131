@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project">
+    <meta name="Author" content="Joseph Garlick">
+    <title>Document</title>
+    <link href = "styles/final.css" rel = "stylesheet">
+    <link href="styles/final-large.css" rel="stylesheet">
+    <script src="scripts/final.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Physical Therapy</h1>
+        <section>
+            <button id="hamburgerBtn">&#9776;</button>
+            <div class="flexbox">
+                <img src="images/Professional Physical Therapy Logo with Wordmark.jpg"
+                    alt="Professional Physical Therapy Logo with Wordmark" width="200" height="200">
+                <nav class="navigation" style="display: none;">
+                    <h1><a href="">About PT:</a></h1>
+                    <h1><a href="why-PT.html">Why PT:</a></h1>
+                    <h1><a href="common-questions.html">Common Questions:</a></h1>
+                </nav>
+                <script>
+                    document.getElementById('hamburgerBtn').addEventListener('click', function () {
+                        const nav = document.querySelector('.navigation');
+                        nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+                    });
+                </script>
+            </div>
+        
+        </section>
+    </header>
+    <main>
+        <div id="content">
+            <picture id="background">
+                <source media="(max-width: 600px)" srcset="images/small.webp">
+                <source media="(max-width: 1200px)" srcset="images/medium.webp">
+                <img src="images/large.jpg" alt="A background picture for a website about physical therapy">
+            </picture>
+            <section id="about-PT">
+                <h2>Why Physical Therapy</h2>
+                <p>Physical therapy (PT) is a crucial component of healthcare that offers numerous benefits to individuals recovering from injuries, managing chronic conditions, or seeking to improve their overall physical function. Here are some reasons why physical therapy is important:</p>
+                <ul>Pain Management: PT can help alleviate pain through various techniques such as manual therapy, exercise, and modalities like heat or cold therapy.</ul>
+                <ul>Improved Mobility: PT focuses on enhancing flexibility, strength, and range of motion, which can help individuals regain their mobility and independence.</ul>
+                <ul>Injury Prevention: PT can identify and address movement patterns or weaknesses that may lead to injuries, helping individuals prevent future issues.</ul>
+                <ul>Rehabilitation: PT plays a vital role in the rehabilitation process after surgeries or injuries, helping individuals recover and return to their daily activities.</ul>
+                <ul>Chronic Condition Management: PT can assist in managing chronic conditions such as arthritis    or diabetes by improving physical function and reducing symptoms.</ul>
+                <ul>Personalized Care: PT provides individualized treatment plans tailored to each person's specific needs and goals.</ul>
+                <ul>Education: PT educates patients on proper body mechanics, posture, and exercises to maintain their health and prevent future problems.</ul>
+                <p>Overall, physical therapy is essential for promoting health, enhancing quality of life, and empowering individuals to take an active role in their recovery and well-being.</p>
+            </section>
+            <section id="Common">
+                <h2>New research:</h2>
+                <p>Recent research in physical therapy has highlighted several advancements and trends that are shaping the field. Here are some notable areas of focus:</p>
+                <ul>Telehealth and Virtual Care: The COVID-19 pandemic accelerated the adoption of telehealth in physical therapy, allowing patients to receive care remotely through video consultations and virtual exercise programs.</ul>
+                <ul>Evidence-Based Practice: There is a growing emphasis on evidence-based practice in physical therapy, with clinicians relying on research and clinical guidelines to inform their treatment decisions.</ul>
+                <ul>Technology Integration: The use of technology, such as wearable devices, motion analysis systems, and virtual reality, is becoming more prevalent in physical therapy to enhance assessment and treatment.</ul>
+                <ul>Personalized Medicine: Advances in genetics and personalized medicine are influencing physical therapy approaches, allowing for more tailored interventions based on individual patient characteristics.</ul>
+                <ul>Chronic Pain Management: Research is exploring new strategies for managing chronic pain, including the use of cognitive-behavioral therapy and mindfulness techniques in conjunction with physical therapy.</ul>
+                <ul>Preventive Care: There is an increasing focus on preventive care in physical therapy, with efforts to promote physical activity and healthy lifestyles to reduce the risk of injuries and chronic conditions.</ul>
+                <ul>Interdisciplinary Collaboration: Physical therapists are increasingly collaborating with other healthcare professionals, such as physicians, occupational therapists, and psychologists, to provide comprehensive care for patients.</ul>
+                <p>Overall, recent research in physical therapy is driving innovation and improving patient outcomes through new technologies, evidence-based practices, and a holistic approach to care.</p>  
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to schedule an appointment, please contact us at:</p>
+                <p>Email: fakeEmail@gmail.com</p>
+                <p>phone: 000-000-0000</p>
+                <p>Address: 123 Fake St, Salt Lake City, UT 84101</p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Joseph Garlick Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

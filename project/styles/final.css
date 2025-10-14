@@ -1,0 +1,73 @@
+@media (max-width: 1000px) {
+    body {
+            background-color: rgba(0, 81, 255, 0.132);
+            font-family: "Roboto", sans-serif;
+        }
+    header {
+        background-color: rgba(255, 136, 0, 0.352);
+        color: #000000;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 1.5em;
+        padding: 1em;
+        text-align: center;
+
+    }
+    main {
+        font-family: 'Roboto', Arial, sans-serif;
+        color: #2c3e50;
+        font-size: 1.2em;
+            padding: 1em;
+            text-align: center;
+        }
+
+    .content {
+        font-family: 'Roboto', Arial, sans-serif;
+    }
+    p {
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: rgba(255, 136, 0, 0.352);
+        color: #000000;
+        font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    main {
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 1em;
+        text-align: center;
+    }
+    button{
+        background-color: #ff8800;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 0.7em 1.5em;
+        font-size: 1em;
+        font-family: 'Roboto', Arial, sans-serif;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    button.open::before {
+        content: 'x';
+    }
+
+    button:hover {
+        background-color: #ffb84d;
+        color: #222;
+    }
+}
+
+

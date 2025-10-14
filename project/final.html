@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project">
+    <meta name="Author" content="Joseph Garlick">
+    <title>Document</title>
+    <link href = "styles/final.css" rel = "stylesheet">
+    <link href = "styles/final-large.css" rel = "stylesheet">
+    <script src = "scripts/final.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Physical Therapy</h1>
+    <section>
+        <button id="hamburgerBtn">&#9776;</button>
+        <div class="flexbox">
+            <img src="images/Professional Physical Therapy Logo with Wordmark.jpg"
+                alt="Professional Physical Therapy Logo with Wordmark" width="200" height="200">
+            <nav class="navigation" style="display: none;"> 
+                <h1><a href="">About PT:</a></h1>
+                <h1><a href="why-PT.html">Why PT:</a></h1>
+                <h1><a href="common-questions.html">Common Questions:</a></h1>
+            </nav>
+            <script>
+                document.getElementById('hamburgerBtn').addEventListener('click', function() {
+                    const nav = document.querySelector('.navigation');
+                    nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+                }); 
+            </script>
+        </div>
+    
+    </section>
+</header>
+    <main>
+    <div id = "content">
+        <picture id = "background">
+            <source media="(max-width: 600px)" srcset="images/small.webp">
+            <source media="(max-width: 1200px)" srcset="images/medium.webp">
+            <img src="images/large.jpg" alt="A background picture for a website about physical therapy">
+        </picture>
+        <section id = "about-PT">
+            <h2>About PT:</h2>
+            <p>Physical therapy (PT), also known as physiotherapy, is a healthcare profession that focuses on the assessment, diagnosis, treatment, and prevention of physical impairments, disabilities, and pain. Physical therapists (PTs) are trained healthcare professionals who work with patients to improve their mobility, function, and overall quality of life through various therapeutic techniques and exercises.</p>
+            <p>Physical therapy can be beneficial for individuals of all ages and can address a wide range of conditions, including musculoskeletal injuries, neurological disorders, cardiovascular issues, respiratory problems, and post-surgical rehabilitation. PTs use a combination of manual therapy, therapeutic exercises, modalities (such as heat or cold therapy), and patient education to help patients recover from injuries, manage chronic conditions, and prevent future injuries.</p>
+            <p>Physical therapy sessions typically involve an initial assessment to evaluate the patient's condition and develop a personalized treatment plan. The treatment plan may include exercises to improve strength, flexibility, balance, and coordination, as well as techniques to reduce pain and inflammation. PTs also provide guidance on proper body mechanics and ergonomics to help patients avoid further injury.</p>
+            <p>Overall, physical therapy plays a crucial role in promoting health and wellness by helping individuals regain their independence and improve their physical function.</p>
+        </section>
+        <section id = "Common">
+            <h2>Common Treatments:</h2>
+            <p>Physical therapy (PT) encompasses a wide range of treatments and techniques aimed at improving mobility, reducing pain, and enhancing overall physical function. Some common treatments used in physical therapy include:</p>
+            <ul>Manual therapy (Ex: massage)</ul>
+            <ul>Therapeutic exercises (Ex: stretching, strengthening)</ul>
+            <ul>Modalities (Ex: heat, cold, ultrasound)</ul>
+            <ul>Neuromuscular re-education (Ex: balance training)</ul>
+            <ul>Patient education (Ex: posture, ergonomics)</ul>
+            <ul>Assistive devices (Ex: crutches, braces)</ul>
+            <ul>Functional training (Ex: gait training)</ul>
+            <ul>Cardiopulmonary rehabilitation (Ex: breathing exercises)</ul>
+            <ul>Hydrotherapy (Ex: aquatic exercises)</ul>
+            <ul>Electrotherapy (Ex: TENS, electrical stimulation)</ul>
+            <p>The specific treatments used in physical therapy will depend on the individual's condition, goals, and overall health. A physical therapist will develop a personalized treatment plan based on a thorough assessment of the patient's needs.</p>
+        </section>
+        <section id = "contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to schedule an appointment, please contact us at:</p>
+            <p>Email: fakeEmail@gmail.com</p>
+            <p>phone: 000-000-0000</p>
+            <p>Address: 123 Fake St, Salt Lake City, UT 84101</p>
+        </section>
+    </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Joseph Garlick Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

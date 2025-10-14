@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Final Project">
+    <meta name="Author" content="Joseph Garlick">
+    <title>Document</title>
+    <link href = "styles/final.css" rel = "stylesheet">
+    <link href="styles/final-large.css" rel="stylesheet">
+    <script src="scripts/final.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Physical Therapy</h1>
+        <section>
+            <button id="hamburgerBtn">&#9776;</button>
+            <div class="flexbox">
+                <img src="images/Professional Physical Therapy Logo with Wordmark.jpg"
+                    alt="Professional Physical Therapy Logo with Wordmark" width="200" height="200">
+                <nav class="navigation" style="display: none;">
+                    <h1><a href="">About PT:</a></h1>
+                    <h1><a href="why-PT.html">Why PT:</a></h1>
+                    <h1><a href="common-questions.html">Common Questions:</a></h1>
+                </nav>
+                <script>
+                    document.getElementById('hamburgerBtn').addEventListener('click', function () {
+                        const nav = document.querySelector('.navigation');
+                        nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+                    });
+                </script>
+            </div>
+        
+        </section>
+    </header>
+    <main>
+        <div id="content">
+            <picture id="background">
+                <source media="(max-width: 600px)" srcset="images/small.webp">
+                <source media="(max-width: 1200px)" srcset="images/medium.webp">
+                <img src="images/large.jpg" alt="A background picture for a website about physical therapy">
+            </picture>
+            <section id="about-PT">
+                <h2>Common Questions:</h2>
+                <p>Physical therapy can benefit a wide range of conditions, including:</p>
+                <ul>Musculoskeletal Injuries (Ex: sprains, strains, fractures)</ul>
+                <ul>Neurological Disorders (Ex: stroke, multiple sclerosis, Parkinson's disease)</ul>
+                <ul>Post-Surgical Rehabilitation (Ex: joint replacement, ligament repair)</ul>
+                <ul>Chronic Conditions (Ex: arthritis, back pain, fibromyalgia)</ul>
+                <ul>Cardiopulmonary Conditions (Ex: heart disease, chronic obstructive pulmonary disease)</ul>
+                <ul>Pediatric Conditions (Ex: developmental delays, cerebral palsy)</ul>
+                <p>How long will my treatment last?</p>
+                <ul>It depends upon the your injury, lifestyle, and condition, but on average patients are typically come to recieve treatment for about 6 - 8 weeks.</ul>           
+                <p>How often will I need to attend physical therapy?</p>
+                <ul>This depends on your specific condition and treatment plan, but most patients typically attend physical therapy sessions 2-3 times per week.</ul>
+                <p>What should I expect during my first physical therapy session?</p>
+                <ul>During your first session, the physical therapist will conduct a thorough assessment of your condition, including a review of your medical history, physical examination, and possibly some diagnostic tests. They will then develop a personalized treatment plan based on your needs and goals.</ul>
+                <p>What types of exercises will I be doing?</p>
+                <ul>The specific exercises will depend on your condition and treatment plan, but they may include stretching, strengthening, balance, and coordination exercises.</ul>
+                <p>Will I need to do exercises at home?</p>
+                <ul>Yes, your physical therapist will likely provide you with a home exercise program to help you continue your progress outside of therapy sessions.</ul>
+                <p>How will I know if physical therapy is working?</p>
+                <ul>Your physical therapist will regularly assess your progress and adjust your treatment plan as needed. You should also notice improvements in your symptoms, mobility, and overall function over time.</ul>
+                <p>What if I have other medical conditions?</p>
+                <ul>Be sure to inform your physical therapist about any other medical conditions you have, as they may impact your treatment plan and approach.</ul>
+                <p>Is physical therapy covered by insurance?</p>
+                <ul>Many insurance plans cover physical therapy, but coverage can vary widely. Be sure to check with your insurance provider to understand your specific benefits and any out-of-pocket costs.</ul>
+                <p>Will physical therapy be painful?</p>
+                <ul>Physical therapy may involve some discomfort, especially if you are working through pain or stiffness. However, your physical therapist will work with you to ensure that your treatment is as comfortable as possible and will adjust your plan as needed.</ul>
+                <p>How can I prepare for my physical therapy sessions?</p>
+                <ul>Wear comfortable clothing that allows for easy movement, bring any necessary medical documents or imaging, and be prepared to discuss your symptoms and goals with your therapist.</ul>
+                <p>Do I need a doctor’s referral to start physical therapy?</p>
+                <ul>In many cases, a doctor's referral is required to begin physical therapy, but some states allow direct access to physical therapy without a referral. Check with your insurance provider and local regulations to determine the requirements in your area.</ul>
+                <p>How can I prevent future injuries?</p>
+                <ul>Your physical therapist can provide you with education and strategies to help prevent future injuries, including proper body mechanics, ergonomics, and exercise techniques.</ul>
+            </section>
+            <section id="Common">
+                <h2>How to become a Physical therapist:</h2>
+                <p>To become a physical therapist, you typically need to follow these steps:</p>
+                <ul>Earn a Bachelor's Degree: Most physical therapy programs require applicants to have a bachelor's degree. While there is no specific major required, it is beneficial to take courses in biology, anatomy, physiology, chemistry, and physics.</ul>
+                <ul>Complete a Doctor of Physical Therapy (DPT) Program: After earning a bachelor's degree, you need to enroll in a DPT program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE). DPT programs usually take three years to complete and include both classroom instruction and clinical experience.</ul>
+                <ul>Pass the National Physical Therapy Examination (NPTE): After graduating from a DPT program, you must pass the NPTE, which is administered by the Federation of State Boards of Physical Therapy (FSBPT). This exam tests your knowledge and skills in physical therapy practice.</ul>
+                <ul>Obtain State Licensure: In addition to passing the NPTE, you must obtain a license to practice physical therapy in the state where you plan to work. Each state has its own licensure requirements, which may include additional exams or background checks.</ul>
+                <ul>Consider Specialization: While not required, some physical therapists choose to specialize in a specific area of practice, such as orthopedics, pediatrics, geriatrics, or sports physical therapy. Specialization typically requires additional training and certification.</ul>
+                <ul>Maintain Licensure and Continuing Education: Physical therapists are required to maintain their licensure by completing continuing education courses and renewing their license periodically, as mandated by their state board.</ul>
+                <h2>Overall, becoming a physical therapist requires a significant commitment to education and training, but it can be a rewarding career helping individuals improve their physical function and quality of life.</h2>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to schedule an appointment, please contact us at:</p>
+                <p>Email: fakeEmail@gmail.com</p>
+                <p>phone: 000-000-0000</p>
+                <p>Address: 123 Fake St, Salt Lake City, UT 84101</p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Joseph Garlick Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
