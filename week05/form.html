@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "styles/form.css" rel = "stylesheet">
+    <script src = "scripts/form.js" defer></script>
+</head>
+<body>
+    <form action = "review.html" id = "form" method = "get">
+        <h1>Service Review Form</h1>
+
+            <label for = "product">Select a product or service:</label>
+
+        <select id = "product" name = "product" required>
+            <option value = "" disabled selected>Select a product...</option>
+
+            <label for = "rating"> Rating:</label>
+            
+            <label><input type="radio" id="rating" name="rating" value="1" required>1</label>
+            <label><input type="radio" id="rating" name="rating" value="2" required>2</label>
+            <label><input type="radio" id="rating" name="rating" value="3" required>3</label>
+            <label><input type="radio" id="rating" name="rating" value="4" required>4</label>
+            <label><input type="radio" id="rating" name="rating" value="5" required>5</label>
+
+            <label for = "visitdate">Date of Visit:</label>
+            <input type = "date" id = "visitdate" name = "visitdate" required>
+
+
+            <label for = "recommend">Would you recommend this service?
+            <input type = "checkbox" id = "recommend" name = "recommend" value = "Yes" required> I recommend this service </label>
+            
+            <label for = "comments">Comments:</label>
+            <textarea id = "comments" name = "comments" rows = "4" cols = "50" placeholder = "Enter your comments here..."></textarea>
+
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" name = "name" placeholder = "Name" required> 
+
+            <input type = "submit" value = "Push">
+            
+        </select>
+
+    </form>>
+    
+
+
+    </form>
+    
+</body>
+</html>

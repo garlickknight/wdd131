@@ -1,0 +1,32 @@
+:root {
+    background-color:lightgrey;
+    --primary-color: #2a4d69;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+select {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+}
+#visitdate {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+}
+
+#name {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+}
